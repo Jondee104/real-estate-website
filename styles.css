@@ -1,0 +1,158 @@
+:root{
+  --nav-color-text:brown;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.nav-logo{
+  color: var(--nav-color-text);
+  display: flex;
+}
+
+li{
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+  margin: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--nav-color-text);
+}
+
+.navigation-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1150px) {
+
+  .nav-logo{
+    font-size: 18px;
+  }
+
+  .navigation-links{
+    display: none;
+  }
+
+
+}
+
+.login-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 550px) {
+  
+  .nav-logo,.sign-in-button{
+    font-size: 25px;
+  }
+
+  .login-section{
+    display: none;
+  }
+  
+}
+
+.sign-in-button{
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sign-in-button:hover{
+  color: var(--nav-color-text);
+}
+
+.sign-up-button{
+  padding: 10px;
+  width: 100px;
+  background: var(--nav-color-text);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up-button:hover{
+  background: rgb(158, 56, 56);
+}
+
+.seperate-login{
+  margin: 0 10px 0px 10px;
+}
+
+.mobile-menu-container{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 2px 4px 2px 4px black;
+  cursor: pointer;
+  border-radius: 25px;
+
+
+  position: fixed;
+  top: 80px;
+  right: 20px;
+
+
+}
+
+#open-menu-container{
+  display: none;
+}
+
+.menu-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-button{
+  display: flex;
+  margin-top: 30px;
+  background: white;
+}
+
+.s{
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.fb{
+  cursor: pointer;
+}
+
+.fb:hover{
+  color: var(--nav-color-text);
+}
+
+.ms{
+  margin-top: 30px;
+}
+
+.close-menu-container{
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  color: var(--nav-color-text);
+}
